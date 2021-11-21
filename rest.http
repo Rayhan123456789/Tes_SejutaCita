@@ -1,0 +1,126 @@
+# @baseUrl = http://192.168.1.105:32033
+@baseUrl = http://192.168.1.105:32148
+
+### Home route
+GET {{baseUrl}}
+
+###
+
+# @name login
+POST {{baseUrl}}/users/auth/login
+Content-Type: application/json
+
+{
+    "username" : "admin",
+    "password": "password"
+}
+
+###
+
+@refreshToken = {{login.response.body.$.refreshToken}}
+@accessToken = {{login.response.body.$.accessToken}}
+
+
+# @name register
+POST {{baseUrl}}/users/auth/register
+Content-Type: application/json
+
+{
+    "username" : "admin",
+    "password": "password"
+    
+}
+
+###
+
+# @name refresh
+POST {{baseUrl}}/users/auth/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken" : "{{refreshToken}}"
+}
+
+###
+@accessToken = {{refresh.response.body.$.accessToken}}
+
+
+# @name logout
+DELETE {{baseUrl}}/users/auth/logout
+Content-Type: application/json
+
+{
+    "refreshToken" : "{{refreshToken}}"
+}
+
+###
+
+# @name userInfo
+GET {{baseUrl}}/users/
+Authorization: Bearer {{accessToken}}
+
+###
+
+# @name userInfoAll
+GET {{baseUrl}}/users/all/
+Authorization: Bearer {{accessToken}}
+
+### 
+
+# @name userInfoID
+GET {{baseUrl}}/users/6035092fd21b790020d3a72d
+Authorization: Bearer {{accessToken}}
+
+### 
+
+# @name createUser
+POST {{baseUrl}}/users
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+    "username" : "user_123",
+    "password": "password",
+    "isAdmin": false
+    
+}
+
+### 
+
+# @name updateUser
+PUT {{baseUrl}}/users
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+    "username" : "admin"
+}
+
+### 
+
+# @name updateUserID
+PUT {{baseUrl}}/users/6035092fd21b790020d3a72d
+Authorization: Bearer {{accessToken}}
+Content-Type: application/json
+
+{
+    "password": "password"
+}
+
+### 
+
+# @name deleteUser
+DELETE {{baseUrl}}/users/
+Authorization: Bearer {{accessToken}}
+
+### 
+
+# @name deleteUserAll
+DELETE {{baseUrl}}/users/all/
+Authorization: Bearer {{accessToken}}
+
+### 
+
+# @name deleteUserID
+DELETE {{baseUrl}}/users/6034f3d8ec55b6153f4af303
+Authorization: Bearer {{accessToken}}
