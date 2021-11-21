@@ -1,6 +1,4 @@
-# SejutaCita Technical Test
-
-## Technical Test Requirements
+# SejutaCitaTest
 
 1. Dengan NodeJS, agar saudara membuat **_Rest API_** **CRUD User** dan **User Login**.
 2. Framework dibebaskan, tetapi disarankan _ExpressJS_. Database bebas, tetapi disarankan _MongoDB_.
@@ -260,5 +258,4 @@ $ microk8s.kubectl get node -o wide
 - Change response format for better REST API format. E.g. adding HATEOAS
 - Change the current Kubernetes script to deployment script
 # SejutaCitaIndonesia-Tes
-# SejutaCitaIndonesia-Tes
-# SejutaCita_TechnicalTes
+
