@@ -12,7 +12,7 @@
 8. Bikin **dokumentasi** API nya (Postman atau Swagger) yang bisa diakses ke server Rest API nya.
 9. Bikin **diagram arsitektur** nya yang menjelaskan _flow API CRUD dan Login_.
 10. Lampirkan _credential Admin di Readme_.
-11. Mohon submit kesini (biasanya orang kirim link Github) paling lambat 24 Februari 2020. Jika tidak bisa sebelum tanggal tersebut, mohon memberi tahu saya secepatnya saja.
+11. Mohon submit kesini (biasanya orang kirim link Github) paling lambat 21 November 2021. Jika tidak bisa sebelum tanggal tersebut, mohon memberi tahu saya secepatnya saja.
 
 # The API - Simple User API
 
@@ -262,4 +262,3 @@ $ microk8s.kubectl get node -o wide
 # SejutaCitaIndonesia-Tes
 # SejutaCitaIndonesia-Tes
 # SejutaCita_TechnicalTes
-# SejutaCita-indonesia-TechnicalTest
