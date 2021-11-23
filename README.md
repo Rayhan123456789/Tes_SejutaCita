@@ -82,12 +82,6 @@ Each node module version can be checked on `package.json` on each Package
 Make sure you already install all the requirements then clone or download the repository.
 
 ```bash
-git clone https://github.com/a-johanes/sejutacita_technical_test.git
-```
-
-or
-
-https://github.com/a-johanes/sejutacita_technical_test/archive/master.zip
 
 ### Install node modules
 
