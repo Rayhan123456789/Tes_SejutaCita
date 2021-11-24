@@ -65,8 +65,6 @@ MongoDB shell version v4.4.0
 ...
 ```
 
-Please follow [this link](https://microk8s.io/docs) to set up microk8s
-
 Each node module version can be checked on `package.json` on each Package
 
 ## How to Install
