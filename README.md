@@ -1,4 +1,4 @@
-# SejutaCitaTest
+# SejutaCitaIndonesia-Tes
 
 1. Dengan NodeJS, agar saudara membuat **_Rest API_** **CRUD User** dan **User Login**.
 2. Framework dibebaskan, tetapi disarankan _ExpressJS_. Database bebas, tetapi disarankan _MongoDB_.
