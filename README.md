@@ -17,10 +17,6 @@
 A user simple API build using **[expressJS](https://expressjs.com/)** framework with **[MongoDB](https://www.mongodb.com/)**.
 Can support **[Docker](https://www.docker.com/) containerization** and **[Kubernetes](https://kubernetes.io/)**.
 
-There is two module for this API:
-
-- [AuthNode](https://github.com/a-johanes/sejutacita_technical_test/tree/master/AuthNode), contains API for user authentication,
-
 ```
   POST .../users/auth/login
   POST .../users/auth/register
