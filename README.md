@@ -40,7 +40,7 @@ DELETE .../users/:id
 The user authentication is implemented using **[JWT](https://jwt.io/)** and **refresh token** mechanism
 
 The API request examples can be seen at [doc](https://github.com/Rayhan123456789/Tes_SejutaCita/edit/master/README.md).
-The exported `Postman` documentation can also be downloaded from {exported_api.postman_collection.json}(https://github.com/Rayhan123456789/Tes_SejutaCita/edit/master/README.md)
+The exported `Postman` documentation can also be downloaded from {exported_api.postman_collection.json}(https://github.com/Rayhan123456789/Tes_SejutaCita/tree/masterd)
 
 
 The app were made this way so it can be scale independently. E.g. we can have two user node and one auth node. Just change the replication from 1 to 2 for the user node.
