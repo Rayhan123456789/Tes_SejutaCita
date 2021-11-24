@@ -24,7 +24,6 @@ Can support **[Docker](https://www.docker.com/) containerization** and **[Kubern
 DELETE .../users/auth/logout
 ```
 
-- [UserNode](https://github.com/a-johanes/sejutacita_technical_test/tree/master/UserNode), contains API for user CRUD operation
 
 ```
    GET .../users/
@@ -40,8 +39,9 @@ DELETE .../users/:id
 
 The user authentication is implemented using **[JWT](https://jwt.io/)** and **refresh token** mechanism
 
-The API request examples can be seen at [doc](https://documenter.getpostman.com/view/9394904/TWDZJGS6).
-The exported `Postman` documentation can also be downloaded from [exported_api.postman_collection.json](https://github.com/a-johanes/sejutacita_technical_test/blob/master/exported_api.postman_collection.json).
+The API request examples can be seen at [doc](https://github.com/Rayhan123456789/Tes_SejutaCita/edit/master/README.md).
+The exported `Postman` documentation can also be downloaded from [exported_api.postman_collection.json](https://github.com/Rayhan123456789/Tes_SejutaCita/edit/master/README.md)
+
 
 The app were made this way so it can be scale independently. E.g. we can have two user node and one auth node. Just change the replication from 1 to 2 for the user node.
 
